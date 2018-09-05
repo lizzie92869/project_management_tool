@@ -1,4 +1,6 @@
 # README
+This tool is dedicated to teams looking to coordinate their work to work around projects together. 
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
