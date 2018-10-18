@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @team_mate.name %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @team_mate.department %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @team_mate.picture %>
+</p>
+
+<p>
+  <strong>Expertise:</strong>
+  <%= @team_mate.expertise %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @team_mate.email %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @team_mate.phone_number %>
+</p>
+
+<%= link_to 'Edit', edit_team_mate_path(@team_mate) %> |
+<%= link_to 'Back', team_mates_path %>

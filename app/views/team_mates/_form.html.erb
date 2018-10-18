@@ -1,0 +1,47 @@
+<%= form_with(model: team_mate, local: true) do |form| %>
+  <% if team_mate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(team_mate.errors.count, "error") %> prohibited this team_mate from being saved:</h2>
+
+      <ul>
+      <% team_mate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :team_mate_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :department %>
+    <%= form.text_field :department, id: :team_mate_department %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.text_field :picture, id: :team_mate_picture %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expertise %>
+    <%= form.text_field :expertise, id: :team_mate_expertise %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :team_mate_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number, id: :team_mate_phone_number %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

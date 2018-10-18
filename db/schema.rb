@@ -10,22 +10,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180905221445) do
+ActiveRecord::Schema.define(version: 20181018171804) do
 
-  create_table "tasks", force: :cascade do |t|
+  create_table "clients", force: :cascade do |t|
     t.string "name"
-    t.date "start_date"
-    t.date "end_date"
-    t.string "description"
+    t.string "address"
+    t.string "contacts"
+    t.integer "annual_budget"
+    t.string "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+  create_table "contacts", force: :cascade do |t|
+    t.string "name"
+    t.string "company"
+    t.string "activity"
     t.string "email"
-    t.string "password"
+    t.string "phone_number"
+    t.string "note"
+    t.string "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "name"
+    t.datetime "deadline"
+    t.string "status"
+    t.integer "budget"
+    t.string "note"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "deadline"
+    t.integer "priority"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "team_mates", force: :cascade do |t|
+    t.string "name"
+    t.string "department"
+    t.string "picture"
+    t.string "expertise"
+    t.string "email"
+    t.string "phone_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

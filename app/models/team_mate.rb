@@ -1,0 +1,2 @@
+class TeamMate < ApplicationRecord
+end
