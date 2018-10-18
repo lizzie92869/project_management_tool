@@ -13,3 +13,102 @@
  *= require_tree .
  *= require_self
  */
+
+
+ .table1 {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+
+.a {
+  font-family: calibri;
+  font-weight: normal;
+  color: turquoise;
+  font-size: 100px;
+}
+
+.l {
+  font-family: c;
+  font-weight: bold;
+  color: orange;
+  font-size: 70px;
+}
+
+h1 {
+  margin: 15px;
+}
+
+.block-bar {
+  background-color: grey;
+  padding: 15px;
+}
+
+.bar {
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  margin-right: 50px;
+  margin-left: 50px;
+  align: "right";
+}
+
+.boxed {
+  background-color: lightgrey;
+  border-right: 100px solid lightgrey;
+  border-left: 100px solid lightgrey;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+body {
+  margin-top: 10px;
+}
+
+.presentation {
+  font-family: calibri;
+  font-size: 20px;
+  padding-top: 200px;
+  padding-left: 250px;
+}
+
+.img-round {
+  border-radius: 50%;
+  margin-top: 200px;
+}
+
+.flotte {
+  float: left;
+}
+
+.position {
+  font-family: calibri;
+  font-size: 20px;
+  padding-left: 250px;
+  color: white;
+}
+
+.big-title {
+  color: darkblue;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.table2 {
+  margin-left: -50px;
+  margin-right: -50px;
+  border: 5;
+  background-color: white;
+  
+}
+
+.td2 {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.breath {
+  margin: 80px;
+}
