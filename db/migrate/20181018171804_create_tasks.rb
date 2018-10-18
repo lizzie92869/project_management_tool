@@ -6,6 +6,9 @@ class CreateTasks < ActiveRecord::Migration[5.1]
       t.datetime :deadline
       t.integer :priority
       t.string :status
+      t.integer :team_mate_id
+      t.integer :project_id
+ 
 
       t.timestamps
     end

@@ -6,6 +6,7 @@ class CreateProjects < ActiveRecord::Migration[5.1]
       t.string :status
       t.integer :budget
       t.string :note
+      t.integer :client_id
 
       t.timestamps
     end
