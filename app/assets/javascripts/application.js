@@ -29,42 +29,34 @@ function attachListeners() {
 
 function openClients(e) {
 	e.preventDefault();
-	let clientsInfo = ` 
-            </div>
-            clients
-            </div>`
-
-    $(".container").html(clientsInfo)
+	$(".clients-content-box").removeClass("hidden");
+	$(".contacts-content-box").addClass("hidden");
+	$(".projects-content-box").addClass("hidden");
+	$(".team-mates-content-box").addClass("hidden");
 }
 
 function openContacts(e) {
 	e.preventDefault();
-	let contactsInfo = ` 
-            </div>
-            contacts
-            </div>`
-
-    $(".container").html(contactsInfo)
+	$(".contacts-content-box").removeClass("hidden");
+	$(".projects-content-box").addClass("hidden");
+	$(".clients-content-box").addClass("hidden");
+	$(".team-mates-content-box").addClass("hidden");
 }
 
 function openTeamMates(e) {
 	e.preventDefault();
-	let teamMatesInfo = ` 
-            </div>
-            Team mates
-            </div>`
-
-    $(".container").html(teamMatesInfo)
+	$(".team-mates-content-box").removeClass("hidden");
+	$(".contacts-content-box").addClass("hidden");
+	$(".projects-content-box").addClass("hidden");
+	$(".clients-content-box").addClass("hidden");
 }
 
 function openProjects(e) {
 	e.preventDefault();
-	let projectsInfo = ` 
-            </div>
-            Projects
-            </div>`
-
-    $(".container").html(projectsInfo)
+	$(".projects-content-box").removeClass("hidden");
+	$(".contacts-content-box").addClass("hidden");
+	$(".clients-content-box").addClass("hidden");
+	$(".team-mates-content-box").addClass("hidden");
 }
 
 

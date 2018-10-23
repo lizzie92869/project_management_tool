@@ -36,7 +36,6 @@ h1 {
   letter-spacing: 2px;
   margin-right: 50px;
   margin-left: 50px;
-  align: "right";
   text-decoration: none;
 }
 
@@ -55,3 +54,9 @@ body {
 .container {
   padding-top: 150px;
 }
+
+.hidden {
+  display: none;
+}
+
+
