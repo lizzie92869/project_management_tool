@@ -22,17 +22,54 @@ $(function() {
 
 function attachListeners() {
     $(".clients").on("click", openClients);     
-    // $(".contacts").on("click", openContacts);
-    // $(".projects").on("click", openProjects);
-    // $(".teammates").on("click", openTeamMates);  
+    $(".contacts").on("click", openContacts);
+    $(".projects").on("click", openProjects);
+    $(".teammates").on("click", openTeamMates);  
 }
 
 function openClients(e) {
 	e.preventDefault();
 	let clientsInfo = ` 
             </div>
-            HIIIIIIIIIII!
+            clients
             </div>`
 
     $(".container").html(clientsInfo)
 }
+
+function openContacts(e) {
+	e.preventDefault();
+	let contactsInfo = ` 
+            </div>
+            contacts
+            </div>`
+
+    $(".container").html(contactsInfo)
+}
+
+function openTeamMates(e) {
+	e.preventDefault();
+	let teamMatesInfo = ` 
+            </div>
+            Team mates
+            </div>`
+
+    $(".container").html(teamMatesInfo)
+}
+
+function openProjects(e) {
+	e.preventDefault();
+	let projectsInfo = ` 
+            </div>
+            Projects
+            </div>`
+
+    $(".container").html(projectsInfo)
+}
+
+
+
+
+
+
+

@@ -51,3 +51,7 @@ h1 {
 body {
   margin-top: 10px;
 }
+
+.container {
+  padding-top: 150px;
+}
