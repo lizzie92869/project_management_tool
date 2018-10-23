@@ -33,6 +33,7 @@ function openClients(e) {
 	$(".contacts-content-box").addClass("hidden");
 	$(".projects-content-box").addClass("hidden");
 	$(".team-mates-content-box").addClass("hidden");
+	$(".calendar-content-box").addClass("hidden");
 }
 
 function openContacts(e) {
@@ -41,6 +42,7 @@ function openContacts(e) {
 	$(".projects-content-box").addClass("hidden");
 	$(".clients-content-box").addClass("hidden");
 	$(".team-mates-content-box").addClass("hidden");
+	$(".calendar-content-box").addClass("hidden");
 }
 
 function openTeamMates(e) {
@@ -49,6 +51,7 @@ function openTeamMates(e) {
 	$(".contacts-content-box").addClass("hidden");
 	$(".projects-content-box").addClass("hidden");
 	$(".clients-content-box").addClass("hidden");
+	$(".calendar-content-box").addClass("hidden");
 }
 
 function openProjects(e) {
@@ -57,6 +60,7 @@ function openProjects(e) {
 	$(".contacts-content-box").addClass("hidden");
 	$(".clients-content-box").addClass("hidden");
 	$(".team-mates-content-box").addClass("hidden");
+	$(".calendar-content-box").addClass("hidden");
 }
 
 
