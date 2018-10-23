@@ -69,9 +69,11 @@
      <div class="contacts-content-box hidden">
      <div> Number of Contacts: <%= Contact.all.count%></div>
      <ul class="list-group">
-     <% @contacts.each do |contact| %>
-     <li class="list-group-item"><%= contact.name %></li>
-     <%end%>
+     <% @contact_companies.each do |company| %>
+     <li class="list-group-item">
+     <%= company %>
+     </li>
+     <% end %>
      </ul>
      </div>
      
