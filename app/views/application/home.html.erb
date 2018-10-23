@@ -32,7 +32,7 @@
 <!-- projects -->
      <div class="projects-content-box hidden">
 
-     <div> Number of Projects: <%= Project.all.count%></div>
+     <div> Number of Projects: <%= @projects.count%></div>
 
      <ul class="list-group">
      <% @projects.each do |project| %>
@@ -44,17 +44,35 @@
 
 <!-- clients -->
      <div class="clients-content-box hidden">
-     Clients:
+     <div> Number of Clients: <%= @clients.count%></div>
+
+     <ul class="list-group">
+     <% @clients.each do |client| %>
+     <li class="list-group-item"><%= client.name %></li>
+     <%end%>
+     </ul>
      </div>
 
 <!-- team mates -->
      <div class="team-mates-content-box hidden">
-     Team mates:
+          <div> Number of Team Mates: <%= TeamMate.all.count%></div>
+
+     <ul class="list-group">
+     <% @team_mates.each do |mate| %>
+     <li class="list-group-item"><%= mate.name %></li>
+     <%end%>
+     </ul>
+
      </div>
 
 <!-- contacts -->
      <div class="contacts-content-box hidden">
-     Contacts:
+     <div> Number of Contacts: <%= Contact.all.count%></div>
+     <ul class="list-group">
+     <% @contacts.each do |contact| %>
+     <li class="list-group-item"><%= contact.name %></li>
+     <%end%>
+     </ul>
      </div>
      
   </div>

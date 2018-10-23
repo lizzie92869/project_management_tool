@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   def index
   	@clients = Client.all
   	@projects = Project.all
+  	@team_mates = TeamMate.all
+  	@contacts = Contact.all
   	render :home
   end
 
