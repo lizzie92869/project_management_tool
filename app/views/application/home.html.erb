@@ -25,9 +25,29 @@
 <body>
   <div class="boxed container">
       <div class="calendar-content-box">Calendar</div>
-     <div class="projects-content-box hidden">Projects:</div>
-     <div class="clients-content-box hidden">Clients:</div>
-     <div class="team-mates-content-box hidden">Team mates:</div>
-     <div class="contacts-content-box hidden">Contacts:</div>
+
+     <div class="projects-content-box hidden">
+     <div> Projects: </div>
+
+     <div> Number of Projects: <%= Project.all.count%></div>
+
+     <div> list of Projects: </div>
+     <% @projects.each do |project| %>
+     <div><%= project.name %></div>
+     <%end%>
+  
+     </div>
+
+     <div class="clients-content-box hidden">
+     Clients:
+     </div>
+
+     <div class="team-mates-content-box hidden">
+     Team mates:
+     </div>
+
+     <div class="contacts-content-box hidden">
+     Contacts:
+     </div>
      
   </div>

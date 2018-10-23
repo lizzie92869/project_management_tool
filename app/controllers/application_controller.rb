@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
 
   def index
   	@clients = Client.all
+  	@projects = Project.all
   	render :home
   end
 
