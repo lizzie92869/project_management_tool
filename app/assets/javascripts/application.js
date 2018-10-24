@@ -55,9 +55,21 @@ function filterContactList(e){
 	let dynamicClassCompanyName = e.target.className.split(' ')[0]
 	e.preventDefault();
 	// remove the hidden class for the names that are from this company
-	$(`.${dynamicClassCompanyName}`).removeClass("hidden");
+	$(`.${dynamicClassCompanyName}-contact`).removeClass("hidden");
+	attachHideFilteredContactsforCompany()
 }
 
+function attachHideFilteredContactsforCompany(){
+	$(".company-name").on("click", hideContactList);
+}
+
+function hideContactList(e){
+	let dynamicClassCompanyName = e.target.className.split(' ')[0]
+	e.preventDefault();
+	// add the hidden class for the names that are from this company
+	$(`.${dynamicClassCompanyName}-contact`).addClass("hidden");
+	attachOpenContactsforCompany()
+}
 
 // For the Team Mates page
 function openTeamMates(e) {

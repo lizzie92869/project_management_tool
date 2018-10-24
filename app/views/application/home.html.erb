@@ -74,7 +74,7 @@
      <a href="#" class="<%=company%> company-name"><%= company %></a>
         <% @contacts.each do |contact| %>
           <% if contact.company == company %>
-          <div class="<%=contact.company%> hidden"><%= contact.name %></div>
+          <div class="<%=contact.company%>-contact hidden"><%= contact.name %></div>
           <% end %>
         <% end %>
      </li>

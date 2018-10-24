@@ -16,6 +16,9 @@ tom = Contact.create(name: "tom", company: "ColorFull", activity: "Client Direct
 andrew = Contact.create(name: "andrew", company: "OffsetPrint", activity: "Project Manager", email: "andrea@company1", phone_number: "714-560-0999", note: "no note")
 yves = Contact.create(name: "Yves", company: "WebHoister", activity: "Marketing Expert", email: "andrea@company1", phone_number: "714-375-8833", note: "no note")
 dan = Contact.create(name: "Dan", company: "DecalIt", activity: "Advertising Specialist", email: "andrea@company1", phone_number: "714-783-2999", note: "no note")
+dan2 = Contact.create(name: "Dan", company: "DecalIt", activity: "Advertising Specialist", email: "andrea@company1", phone_number: "714-783-2999", note: "no note")
+dan3 = Contact.create(name: "Dan", company: "DecalIt", activity: "Advertising Specialist", email: "andrea@company1", phone_number: "714-783-2999", note: "no note")
+dan4 = Contact.create(name: "Dan", company: "DecalIt", activity: "Advertising Specialist", email: "andrea@company1", phone_number: "714-783-2999", note: "no note")
 
 team_mate1 = TeamMate.create(name: "Tim", department: "legal expertise", picture: "none", expertise: "legal expert", email: "tim@here.com", phone_number: "714-908-7564")
 team_mate2 = TeamMate.create(name: "Frank", department: "Administration", picture: "none", expertise: "administration organization", email: "frank@here.com", phone_number: "714-897-0284")     
