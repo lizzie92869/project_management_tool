@@ -11,14 +11,5 @@ class ApplicationController < ActionController::Base
   	render :home
   end
 
- #  def contact_companies
-	# 	@contact_companies = []
-	# 	@contacts.each do |contact|
-	# 		if @contact_companies.exclude?(contact.company)
-	# 		contact_companies.push(contact.company)
-	# 		end
-	# 	end
-	# 	return @contact_companies	
-	# end
 
 end

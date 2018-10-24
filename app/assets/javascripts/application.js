@@ -36,6 +36,7 @@ function openClients(e) {
 	$(".calendar-content-box").addClass("hidden");
 }
 
+// for the Contact page
 function openContacts(e) {
 	e.preventDefault();
 	$(".contacts-content-box").removeClass("hidden");
@@ -43,8 +44,22 @@ function openContacts(e) {
 	$(".clients-content-box").addClass("hidden");
 	$(".team-mates-content-box").addClass("hidden");
 	$(".calendar-content-box").addClass("hidden");
+	attachOpenContactsforCompany()
 }
 
+function attachOpenContactsforCompany() {
+	$(".company-name").on("click", filterContactList);
+}
+
+function filterContactList(e){
+	let dynamicClassCompanyName = e.target.className.split(' ')[0]
+	e.preventDefault();
+	// remove the hidden class for the names that are from this company
+	$(`.${dynamicClassCompanyName}`).removeClass("hidden");
+}
+
+
+// For the Team Mates page
 function openTeamMates(e) {
 	e.preventDefault();
 	$(".team-mates-content-box").removeClass("hidden");
@@ -62,6 +77,7 @@ function openProjects(e) {
 	$(".team-mates-content-box").addClass("hidden");
 	$(".calendar-content-box").addClass("hidden");
 }
+
 
 
 
