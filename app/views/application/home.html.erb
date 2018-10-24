@@ -44,25 +44,47 @@
 
 <!-- clients -->
      <div class="clients-content-box hidden">
-     <div> Number of Clients: <%= @clients.count%></div>
-
      <ul class="list-group">
      <% @clients.each do |client| %>
-     <li class="list-group-item"><%= client.name %></li>
+     <li class="list-group-item">
+        <div class="bootstrap-blue">
+        <%= client.name %>
+        </div>
+        <div>
+        <i class="icons fas fa-map-marker-alt"></i><%= client.address %>
+        <div>
+        <div>
+        <i class="icons far fa-envelope"></i><%= client.contacts %>
+        </div>
+        <i class="icons fas fa-dollar-sign"></i>annual budget: <%= client.annual_budget%>
+        <div class="icons ">notes: <%= client.note %></div>
+     </li>
      <%end%>
      </ul>
      </div>
 
 <!-- team mates -->
      <div class="team-mates-content-box hidden">
-          <div> Number of Team Mates: <%= TeamMate.all.count%></div>
-
      <ul class="list-group">
-     <% @team_mates.each do |mate| %>
-     <li class="list-group-item"><%= mate.name %></li>
-     <%end%>
-     </ul>
+     <% @team_mates_departments.each do |department| %>
+       <li class="list-group-item">
+       <a href="#hi" class="<%=department%> department-name"><%= department %></a>
 
+       <% @team_mates.each do |team_mate| %>
+          <% if team_mate.department == department %>
+            <div class="<%=team_mate.department%>-contact hidden light-grey-box"> 
+            <span class="icons"><%= team_mate.name %></span>
+            <i class="icons fas fa-phone"></i>
+            <a href="tel:<%=team_mate.phone_number%>"><%= team_mate.phone_number %></a>
+            <i class="icons far fa-envelope"></i>
+            <a href="mailto:<%=team_mate.email%>"><%= team_mate.email %></a>
+            </div>
+          <% end %>
+       <% end %>
+
+       </li>
+     <% end %>
+     </ul>
      </div>
 
 <!-- contacts -->

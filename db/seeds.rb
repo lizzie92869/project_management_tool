@@ -20,9 +20,12 @@ dan2 = Contact.create(name: "Dan", company: "DecalIt", activity: "Advertising Sp
 dan3 = Contact.create(name: "Dan", company: "DecalIt", activity: "Advertising Specialist", email: "andrea@company1", phone_number: "+1 (714) 496-1099", note: "no note")
 dan4 = Contact.create(name: "Dan", company: "DecalIt", activity: "Advertising Specialist", email: "andrea@company1", phone_number: "+1 (714) 496-1099", note: "no note")
 
-team_mate1 = TeamMate.create(name: "Tim", department: "legal expertise", picture: "none", expertise: "legal expert", email: "tim@here.com", phone_number: "+1 (714) 496-1099")
+team_mate1 = TeamMate.create(name: "Tim", department: "legal", picture: "none", expertise: "legal expert", email: "tim@here.com", phone_number: "+1 (714) 496-1099")
 team_mate2 = TeamMate.create(name: "Frank", department: "Administration", picture: "none", expertise: "administration organization", email: "frank@here.com", phone_number: "+1 (714) 496-1099")     
 team_mate3 = TeamMate.create(name: "Brad", department: "Marketing", picture: "none", expertise: "marketing specialist", email: "brad@here.com", phone_number: "+1 (714) 496-1099")
+team_mate4 = TeamMate.create(name: "Daniel", department: "legal", picture: "none", expertise: "legal expert", email: "tim@here.com", phone_number: "+1 (714) 496-1099")
+team_mate5 = TeamMate.create(name: "Ellie", department: "Administration", picture: "none", expertise: "administration organization", email: "frank@here.com", phone_number: "+1 (714) 496-1099")     
+team_mate6 = TeamMate.create(name: "Adel", department: "Marketing", picture: "none", expertise: "marketing specialist", email: "brad@here.com", phone_number: "+1 (714) 496-1099")
 
 event_banner = Project.create(client_id: 1, name: "event banner", deadline: "12/12/2018", status: "in progress", budget: 650, note: "will be placed in a windy area")
 event_flyer = Project.create(client_id: 1, name: "event flyer", deadline: "12/12/2018", status: "in progress", budget: 1800, note: "declination poster")
