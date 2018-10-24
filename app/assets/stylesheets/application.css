@@ -6,6 +6,9 @@
 body {
 	 font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+
+
+
  .table1 {
   background-color: rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -58,6 +61,17 @@ body {
 
 .hidden {
   display: none;
+}
+
+.icons {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.light-grey-box {
+  color: grey;
+  background-color: #EEE;
+  border-top: 5px solid white;
 }
 
 

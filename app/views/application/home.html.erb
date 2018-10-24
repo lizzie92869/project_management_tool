@@ -3,7 +3,7 @@
 <table width=100% class="table1">
   <tr>
     <td>
-      <h1 class="logo-start">TASK 
+      <h1 class="logo-start">PLAN 
 <span class="logo-end">IT</span>
 </h1>
       </span>
@@ -67,14 +67,24 @@
 
 <!-- contacts -->
      <div class="contacts-content-box hidden">
-     <div> Number of Contacts: <%= Contact.all.count%></div>
      <ul class="list-group">
      <% @contact_companies.each do |company| %>
      <li class="list-group-item">
      <a href="#" class="<%=company%> company-name"><%= company %></a>
         <% @contacts.each do |contact| %>
           <% if contact.company == company %>
-          <div class="<%=contact.company%>-contact hidden"><%= contact.name %></div>
+          <div class="<%=contact.company%>-contact hidden light-grey-box">
+            <span class="icons"><%= contact.name %></span>
+            <i class="icons fas fa-phone"></i>
+            <a href="tel:<%=contact.phone_number%>"><%= contact.phone_number %></a>
+            <i class="icons far fa-envelope"></i>
+            <%= contact.email %>
+            <i class="icons fas fa-briefcase"></i>
+            <%= contact.activity %>
+            <div class="icons"> Notes: 
+            <%= contact.note %>
+            </div>
+          </div>
           <% end %>
         <% end %>
      </li>
