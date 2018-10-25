@@ -1,5 +1,4 @@
-//= require_self
-//= require_tree ./channels
+
 
 $(function() {
     attachListeners();
@@ -66,16 +65,3 @@ function hideContactList(e){
 }
 
 
-
-
-
-
-
-function openProjects(e) {
-	e.preventDefault();
-	$(".projects-content-box").removeClass("hidden");
-	$(".contacts-content-box").addClass("hidden");
-	$(".clients-content-box").addClass("hidden");
-	$(".team-mates-content-box").addClass("hidden");
-	$(".calendar-content-box").addClass("hidden");
-}

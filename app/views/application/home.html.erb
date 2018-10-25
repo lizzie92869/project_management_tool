@@ -36,7 +36,11 @@
 
      <ul class="list-group">
      <% @projects.each do |project| %>
-     <li class="list-group-item"><%= project.name %></li>
+        <li class="list-group-item">
+          <a href="#" class="<%=project.id%> project-name"><%= project.name %></a>
+
+          <div class="<%=project.id%>-info hidden light-grey-box">hello I was hidden</div>
+        </li>
      <%end%>
      </ul>
 
